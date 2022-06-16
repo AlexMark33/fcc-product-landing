@@ -1,0 +1,80 @@
+.form-section {
+    padding: 100px 20px;
+}
+
+.contacts-form-block {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+@media (max-width: 780px) {
+    .contacts-form-block {
+        flex-direction: column;
+    }
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    background-color: var(--background-form-color);
+    border-radius: 20px;
+    width: 50%;
+}
+
+@media (max-width: 780px) {
+    #form {
+        width: 90%;
+    }
+}
+
+input {
+    min-height: 40px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 19px;
+}
+
+#submit {
+    width: fit-content;
+    margin-top: 30px;
+    background-color: var(--main-backgtound-color);
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-form-color);
+    border-radius: 20px;
+    padding: 30px;
+    width: 50%;
+}
+
+@media (max-width: 780px) {
+    #contacts {
+        width: 90%;
+    }
+}
+
+.contacts__adress,
+.contacts__working-hours,
+.contacts__pnone-mail {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+h3 {
+    width: 40%;
+    text-align: left;
+}
+
+.map {
+    width: 100%;
+}

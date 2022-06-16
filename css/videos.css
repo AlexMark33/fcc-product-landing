@@ -1,0 +1,35 @@
+.videos-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 50px 20px;
+}
+
+@media (max-width: 1000px) {
+    .videos-block {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 780px) {
+    .videos-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.video {
+    min-height: 300px;
+    min-width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 780px) {
+    .videos-block {
+        padding: 0;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
