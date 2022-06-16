@@ -35,4 +35,5 @@ img {
     cursor: pointer;
     padding: 0;
     line-height: 0;
+    color: var(--links-text-color);
 }
